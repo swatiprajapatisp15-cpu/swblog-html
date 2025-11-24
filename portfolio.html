@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+
+<style>
+     /*general styles*/
+    *{
+        margin: 0%;
+        padding: 0%;
+        box-sizing: border-box;
+    }
+    body{
+        font-family: Arial, Helvetica, sans-serif;
+        background-color: #f4f4f4;
+        line-height: 1.6;
+        color:#333;
+    } 
+    a{
+        text-decoration: none;
+        color: #333;
+    }
+    a:hover{
+        color: #007bff;
+    }
+    /*header*/
+    header{
+        background-color: #007bff;
+        color: #fff;
+        padding: 1rem;
+        text-align: center;
+    }
+    header h1{
+        margin-bottom: 0.5rem;
+        font-size: 2.5rem;;
+    }
+    header p{
+        font-size: 1.2rem;
+    }
+    /*navigation */
+    nav{
+     display: flex;
+    justify-content: center;
+    background: #fff;
+    box-shadow: 0 2 px 4px rgba(0,0,0,0.1);
+    }
+    nav ul{
+        list-style: none;
+        display: flex;
+    }
+    nav ul li{
+        margin: 1 rem 0;
+    }
+    nav ul li a{
+        font-weight: bold;
+        padding: 0.1 rem;
+        display: inline-block;
+    }
+    /*section*/
+    section{
+        max-width: 1100px;
+        margin: 2rem auto;
+        padding: 1rem;
+    }
+    .about,.experiance,.contact{
+        margin-bottom: 2rem;
+    }
+/*about section*/
+.about img{
+    width:150px;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+}
+.about h2{
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+.abot p{
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+/*skills*/
+.skills{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+.skills.skil{
+    background: #007bff;
+    color: #fff;
+    padding: 0.5rem;
+    border-radius: 20px;
+    font-size: 1rem;
+    font-weight: bold;
+}
+/*Project Section*/
+.experiance h2{
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+.experiance card{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+
+}
+.experiance-card.card{
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    flex: 1;
+    min-width: 300px;
+    max-width: 500px;
+}
+   .card img{
+    width: 100px;
+    height: 200px;
+    object-fit: cover;
+   }  
+   .card-content{
+    padding: 1rem;;
+   }   
+   .card-content h3{
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+   }
+   .card-content p{
+    font-size: 1rem;
+    margin-bottom: 1rem;
+   }
+   .card .contact a{
+    background: #007bff;
+    color: #fff;
+    padding: 0.5rem 1 rem;
+    border-radius: 5px;
+    font-size: 1rem;
+    text-align: center;
+    display: inline-block;
+   }
+
+        </style>
+        </head>
+<body>
+    <header>
+        <h1>Rupali Gaykwad</h1>
+        <p>fashion designer</p>
+        </header>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">experience</a></li>
+                <li><a href="#contact">contact</a></li>
+            </ul>
+        </nav>
+        <section class="about" id="about">
+            <div style="text-align: center;">
+                <img src="https://backiee.com/static/wallpapers/1920*1080/386745.jpg" alt="john doe">
+                <h2>About me</h2>
+                    <p>hello!i am john,a passionate fashion designer.</p>
+                    <p>here are some  i work with:</p>
+                </div>
+            <div class="skills">
+                <div class="skill">Fashion medelling</div>
+                <div class="skill">Brand Management</div>
+                <div class="skill">Pattern Making</div>
+
+            </div>
+        </section>
+        <section class="experience" id="experiance">
+            <h2>experiance</h2>
+            <div class="experiance">
+                <div class="card">
+                    <img src="https://via.placeholder.com/600*400" alt="project 1">
+                    <div class="card-content">
+                        <h3>experiace 1</h3>
+                        <p>work with lakme saloon</p>
+                        <a href="#">View experiace</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="contact" id="contact">
+            <h2>contact me</h2>
+            <form>
+                <input type="text" name="name" placeholder="your name" required>
+                <input type="email" name="email" placeholder="your email" required>
+                <textarea name="Message" rows="5" placeholder="your Message" required></textarea>
+                <button type="submit">send message</button>
+            </form>
+
+    </header>
+</body>
+</html>
