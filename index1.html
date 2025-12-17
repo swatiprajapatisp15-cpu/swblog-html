@@ -1,15 +1,133 @@
 <!DOCTYPE html>
 <html lang="en">
+<!DOCTYPE html>
+<html lang="en">
+ 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
+  <link href="./fe.css" rel="stylesheet">
+  
 </head>
+ 
 <body>
-  <div>
-   <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3720.2230519937552!2d72.82817597289105!3d21.183296432457396!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be04e422d62234d%3A0xfd57859252292f05!2sUdhana%20Darwaja%2C%20Aman%20Nagar%2C%20Surat%2C%20Gujarat%20395002!5e0!3m2!1sen!2sin!4v1760401943785!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-<br/><br/>
-
+  <div class="container-fluid">
+    <section class="main">
+      <section class="inputs">
+        <input type="text" placeholder="Enter any city..." id="cityinput">
+        <input type="submit" value="Submit" id="add">
+      </section>
+ 
+      <section class="display">
+        <div class="wrapper">
+          <h2 id="cityoutput">
+ 
+          </h2>
+          <p id="description">
+ 
+          </p>
+          <p id="temp">
+ 
+          </p>
+          <p id="wind">
+            
+          </p>
+        </div>
+        <script src="./fe.js"></script>
+      </section>
+    </section>
+ 
   </div>
 </body>
+ 
 </html>
+ 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body
+{
+    background: #116396;
+}
+.container-fluid
+{
+    width: 400px;
+    margin: 60px auto;
+    padding: 10px;
+}
+.inputs
+{
+    padding: 2rem 0 2rem 0;
+    text-align: center;
+    justify-content: center;
+    background: white;
+}
+.inputs input[type="text"]
+{
+    height: 4rem;
+    width: 20rem;
+    background: #212121;
+    font-weight: bold;
+    font-size: 1rem;
+    padding: 10px;
+    border: none;
+    background-color: transparent;
+    border: 2px solid #c2c2c2;
+    border-radius: 2px;
+    margin-right:4px ;
+}
+.inputs input[type="submit"]
+{
+    height: 3rem;
+    width: 6rem;
+    background: #0a67ca;
+    font-weight: bold;
+    color: white;
+    font-size: 1rem;
+    margin-top: 20px;
+    border: none;
+    border-radius: 2px;
+}
+.display
+{
+    text-align: center;
+    width: 400px;
+    color: #16a864;
+}
+.wrapper
+{
+    margin: 0 9rem;
+    background-color: white;
+    height: 45vh;
+    margin: 50px auto;
+    border-radius: 2px;
+}
+ 
+.wrapper h2
+{
+    padding: 5px 0;
+    text-align: center;
+    background: #0548b5;
+    color: white;
+    font-family: sans-serif;
+}
+.wrapper p
+{
+    margin:20px 50px;
+    margin-right: 20px;
+    text-align: left;
+    color: #04214c;
+    font-size:23px;
+}
+.wrapper h2 span
+{
+    font-size: 26px;
+    color: #9beefb;
+}
+.wrapper p span
+{
+    color: #f4780d;
+    font-size: 25px;
+}
+ 
